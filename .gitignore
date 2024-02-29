@@ -4,3 +4,4 @@
 .env
 report
 allure-results
+check_some_stuff_file.py

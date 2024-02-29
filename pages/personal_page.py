@@ -25,13 +25,13 @@ class PersonalPage(BasePage):
             first_name_field.send_keys(new_value)
             self.new_value = new_value
 
-    def change_middle_name(self, new_name):
-        with allure.step(f"Change middle name on '{new_name}'"):
+    def change_middle_name(self, new_value):
+        with allure.step(f"Change middle name on '{new_value}'"):
             middle_name_field = self.wait.until(EC.element_to_be_clickable(self.MIDDLE_NAME_FIELD_LOCATOR))
             middle_name_field.send_keys(Keys.CONTROL + "A")
             middle_name_field.send_keys(Keys.BACKSPACE)
-            middle_name_field.send_keys(new_name)
-            self.new_value = new_name
+            middle_name_field.send_keys(new_value)
+            self.new_value = new_value
 
     def change_last_name(self, new_value):
         with allure.step(f"Change last name on '{new_value}'"):
@@ -43,7 +43,7 @@ class PersonalPage(BasePage):
 
     def change_employee_id(self, new_value):
         with allure.step(f"Change employee id on '{new_value}'"):
-            middle_name_field = self.wait.until(EC.element_to_be_clickable(self.LAST_NAME_FIELD_LOCATOR))
+            middle_name_field = self.wait.until(EC.element_to_be_clickable(self.EMPLOYEE_ID_FIELD_LOCATOR))
             middle_name_field.send_keys(Keys.CONTROL + "A")
             middle_name_field.send_keys(Keys.BACKSPACE)
             middle_name_field.send_keys(new_value)
