@@ -3,14 +3,79 @@
   "children" : [ {
     "name" : "tests.test_feature_profile",
     "children" : [ {
-      "name" : "Change profile name",
-      "uid" : "f4e8b7da8f40f8b8",
+      "name" : "Change profile other id",
+      "uid" : "7875b0244fd9e545",
       "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
       "status" : "passed",
       "time" : {
-        "start" : 1709039235592,
-        "stop" : 1709039247007,
-        "duration" : 11415
+        "start" : 1709306881394,
+        "stop" : 1709306889788,
+        "duration" : 8394
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change profile last name",
+      "uid" : "1eac6ce4fd76c24c",
+      "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709306881403,
+        "stop" : 1709306889736,
+        "duration" : 8333
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change profile middle name",
+      "uid" : "c9085c497f1a297b",
+      "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709306881458,
+        "stop" : 1709306886600,
+        "duration" : 5142
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change profile employee id",
+      "uid" : "1aea46a5a07c3256",
+      "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709306899166,
+        "stop" : 1709306906950,
+        "duration" : 7784
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change profile driver license",
+      "uid" : "db97232ae83a6e3e",
+      "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709306899356,
+        "stop" : 1709306907118,
+        "duration" : 7762
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change profile name",
+      "uid" : "e6b864e75739f1f",
+      "parentUid" : "cf604e8a29c0a1018dba642f117bd9a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709306920993,
+        "stop" : 1709306928672,
+        "duration" : 7679
       },
       "flaky" : false,
       "newFailed" : false,

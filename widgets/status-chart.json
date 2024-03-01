@@ -1,10 +1,60 @@
 [ {
-  "uid" : "f4e8b7da8f40f8b8",
+  "uid" : "7875b0244fd9e545",
+  "name" : "Change profile other id",
+  "time" : {
+    "start" : 1709306881394,
+    "stop" : 1709306889788,
+    "duration" : 8394
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1eac6ce4fd76c24c",
+  "name" : "Change profile last name",
+  "time" : {
+    "start" : 1709306881403,
+    "stop" : 1709306889736,
+    "duration" : 8333
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1aea46a5a07c3256",
+  "name" : "Change profile employee id",
+  "time" : {
+    "start" : 1709306899166,
+    "stop" : 1709306906950,
+    "duration" : 7784
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db97232ae83a6e3e",
+  "name" : "Change profile driver license",
+  "time" : {
+    "start" : 1709306899356,
+    "stop" : 1709306907118,
+    "duration" : 7762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6b864e75739f1f",
   "name" : "Change profile name",
   "time" : {
-    "start" : 1709039235592,
-    "stop" : 1709039247007,
-    "duration" : 11415
+    "start" : 1709306920993,
+    "stop" : 1709306928672,
+    "duration" : 7679
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c9085c497f1a297b",
+  "name" : "Change profile middle name",
+  "time" : {
+    "start" : 1709306881458,
+    "stop" : 1709306886600,
+    "duration" : 5142
   },
   "status" : "passed",
   "severity" : "critical"

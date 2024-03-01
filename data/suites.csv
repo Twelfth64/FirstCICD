@@ -1,2 +1,7 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Feb 27 13:07:15 GMT 2024","Tue Feb 27 13:07:27 GMT 2024","11415","tests","test_feature_profile","TestProfileFeature","","","Change profile name",""
+"passed","Fri Mar 01 15:28:01 GMT 2024","Fri Mar 01 15:28:09 GMT 2024","8394","tests","test_feature_profile","TestProfileFeature","","","Change profile other id",""
+"passed","Fri Mar 01 15:28:01 GMT 2024","Fri Mar 01 15:28:09 GMT 2024","8333","tests","test_feature_profile","TestProfileFeature","","","Change profile last name",""
+"passed","Fri Mar 01 15:28:19 GMT 2024","Fri Mar 01 15:28:26 GMT 2024","7784","tests","test_feature_profile","TestProfileFeature","","","Change profile employee id",""
+"passed","Fri Mar 01 15:28:19 GMT 2024","Fri Mar 01 15:28:27 GMT 2024","7762","tests","test_feature_profile","TestProfileFeature","","","Change profile driver license",""
+"passed","Fri Mar 01 15:28:40 GMT 2024","Fri Mar 01 15:28:48 GMT 2024","7679","tests","test_feature_profile","TestProfileFeature","","","Change profile name",""
+"passed","Fri Mar 01 15:28:01 GMT 2024","Fri Mar 01 15:28:06 GMT 2024","5142","tests","test_feature_profile","TestProfileFeature","","","Change profile middle name",""
