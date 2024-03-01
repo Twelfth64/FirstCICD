@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
-    command: /bin/sh -c "ls -la && pytest -n 2 -sv --alluredir=allure-results"
+    command: /bin/sh -c "pip install -r ./requirements.txt && pytest -n 6 -sv --reruns 5 --reruns-delay 1 --alluredir=allure-results"
     working_dir: /usr/workspace
     environment:
       - LOGIN=${LOGIN}

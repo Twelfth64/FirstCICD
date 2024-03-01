@@ -21,3 +21,11 @@ class BaseTest:
         request.cls.login_page = LoginPage(driver)
         request.cls.dashboard_page = DashboardPage(driver)
         request.cls.personal_page = PersonalPage(driver)
+        request.cls.cookie = None
+
+        self.login_page.open()
+        self.login_page.enter_login(self.data.LOGIN)
+        self.login_page.enter_password(self.data.PASSWORD)
+        self.login_page.click_submit_button()
+
+

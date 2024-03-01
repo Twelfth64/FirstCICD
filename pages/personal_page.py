@@ -7,13 +7,14 @@ from selenium.webdriver import Keys
 
 
 class PersonalPage(BasePage):
-
     PAGE_URL = Links.PERSONAL_PAGE
 
     FIRST_NAME_FIELD_LOCATOR = ("xpath", "//input[@name='firstName']")
     MIDDLE_NAME_FIELD_LOCATOR = ("xpath", "//input[@name='middleName']")
     LAST_NAME_FIELD_LOCATOR = ("xpath", "//input[@name='lastName']")
     EMPLOYEE_ID_FIELD_LOCATOR = ("xpath", "(//input[contains(@class, 'oxd-input')])[5]")
+    OTHER_ID_FIELD_LOCATOR = ("xpath", "(//input[contains(@class, 'oxd-input')])[6]")
+    DRIVER_LICENSE_FIELD_LOCATOR = ("xpath", "(//input[contains(@class, 'oxd-input')])[7]")
     SAVE_BUTTON_LOCATOR = ("xpath", "(//button[@type='submit'])[1]")
     SPINNER_LOCATOR = ("xpath", "//div[@class='oxd-loading-spinner']")
 
@@ -44,6 +45,22 @@ class PersonalPage(BasePage):
     def change_employee_id(self, new_value):
         with allure.step(f"Change employee id on '{new_value}'"):
             middle_name_field = self.wait.until(EC.element_to_be_clickable(self.EMPLOYEE_ID_FIELD_LOCATOR))
+            middle_name_field.send_keys(Keys.CONTROL + "A")
+            middle_name_field.send_keys(Keys.BACKSPACE)
+            middle_name_field.send_keys(new_value)
+            self.new_value = new_value
+
+    def change_employee_other_id(self, new_value):
+        with allure.step(f"Change employee other id on '{new_value}'"):
+            middle_name_field = self.wait.until(EC.element_to_be_clickable(self.OTHER_ID_FIELD_LOCATOR))
+            middle_name_field.send_keys(Keys.CONTROL + "A")
+            middle_name_field.send_keys(Keys.BACKSPACE)
+            middle_name_field.send_keys(new_value)
+            self.new_value = new_value
+
+    def change_employee_driver_license(self, new_value):
+        with allure.step(f"Change employee driver license on '{new_value}'"):
+            middle_name_field = self.wait.until(EC.element_to_be_clickable(self.DRIVER_LICENSE_FIELD_LOCATOR))
             middle_name_field.send_keys(Keys.CONTROL + "A")
             middle_name_field.send_keys(Keys.BACKSPACE)
             middle_name_field.send_keys(new_value)

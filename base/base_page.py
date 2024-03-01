@@ -1,4 +1,6 @@
 import allure
+import pickle
+import os
 from allure_commons.types import AttachmentType
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,10 +12,12 @@ class BasePage:
         self.driver = driver
         self.wait = WebDriverWait(driver, 15, poll_frequency=1)
 
+    """Open specified page"""
     def open(self):
         with allure.step(f"Open {self.PAGE_URL} page"):
             self.driver.get(self.PAGE_URL)
 
+    """Check that specified page is opened"""
     def is_opened(self):
         with allure.step(f"Page {self.PAGE_URL} is opened"):
             self.wait.until(EC.url_to_be(self.PAGE_URL))
